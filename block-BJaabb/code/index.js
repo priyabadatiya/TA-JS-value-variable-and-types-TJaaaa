@@ -73,9 +73,8 @@ Example:
 
 var num1 = prompt("enter first value");
 var num2 = prompt("enter second value");
-if (num1 == "true" || num1 == "null" || num1 == "undefined" || num2 == "true" || num2 == "null" || num2 == "undefined") {
-    alert('Enter a valid value')
+if (isNaN(num1) || isNaN(num2)) {
+    alert("enter a valid value!")
 } else {
-
-    alert(num1 == num2);
+    alert(num1 === num2);
 }
