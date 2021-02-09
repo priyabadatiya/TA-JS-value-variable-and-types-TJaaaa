@@ -10,6 +10,18 @@ Write a program that asks the user his/her age and check for the following condi
 - `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
 👇
 */
+var age = prompt("enter the user age");
+if (age > 12 && age < 55) {
+    alert("You can participate in the marathon")
+} else if (age > 4 && age < 11) {
+    alert(" You are too young to participate in the marathon")
+} else if (age < 4) {
+    alert(" Hey Kiddo! Can You Walk ?")
+} else if (age > 55) {
+    alert(" You are too old to participate in the marthon")
+} else {
+    alert("not at all");
+}
 
 // Loops
 /*
@@ -21,13 +33,23 @@ n = 7 => output: heeeeeeello
 👇
 */
 // [Your code goes here]
+var n = prompt()
+var value = "e"
+for (i = 1; i < n; i++)
+    value = value + 'e'
+"h" + value + 'llo'
 
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
 */
 // [Your code goes here]
-
+let x = prompt("Input a value");
+sum = 0;
+for (i = 1; i <= x; i++) {
+    sum += i;
+}
+console.log(sum);
 /* Switch Statement
 
  🎖Using switch statement do the following
@@ -46,7 +68,38 @@ Take a number value from user and alert the message if it matches the conditions
 
 */
 // [Your code goes here]
-
+let number = prompt("enter a number");
+switch (true) {
+    case number == 1:
+        alert("ONE");
+        break;
+    case number == 2:
+        alert("TWO");
+        break;
+    case number == 3:
+        alert("THREE");
+        break;
+    case number == 4:
+        alert("FOUR");
+        break;
+    case number == 5:
+        alert("FIVE");
+        break;
+    case number == 6:
+        alert("SIX");
+        break;
+    case number == 7:
+        alert("SEVEN");
+        break;
+    case number == 8:
+        alert("EIGHT");
+        break;
+    case number == 9:
+        alert("NINE");
+        break;
+    default:
+        alert("PLEASE TRY AGAIN");
+}
 /*
 🎖Using switch statement do the following
 
@@ -63,15 +116,61 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 // [Your code goes here]
 
+var marks = prompt("enter marks");
+switch (true) {
+    case marks > 90:
+        alert("Your Grade is AA")
+        break;
+    case marks > 80 && marks < 90:
+        alert("Your Grade is AB")
+        break;
+    case marks > 70 && marks < 80:
+        alert("Your Grade is BB")
+        break;
+    case marks > 60 && marks < 70:
+        alert("Your Grade is BC")
+        break;
+    case marks > 50 && marks < 60:
+        alert("Your Grade is CC")
+        break;
+    case marks > 40 && marks < 50:
+        alert("Your Grade is CD")
+        break;
+    case marks > 30 && marks < 40:
+        alert("Your Grade is DD")
+        break;
+    case marks < 30:
+        alert("Your Grade is FF")
+        break;
+    default:
+        alert("No grades")
+}
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */
 // [your code goes here]
 
+var first = +prompt("enter first integer");
+var second = +prompt("enter second integer");
+if (first > second) {
+    alert(" the max value is " + first);
+} else {
+    alert("the max value is " + second);
+}
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
 // [Your code goes here]
+var a = +prompt("Enter first number");
+var b = +prompt("Enter second number");
+var c = +prompt("Enter third number");
+let product = a * b * c
+if (product > 0) {
+    alert("+")
+} else {
+    alert("-");
+}
+
 
 /* Calculator
  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
@@ -86,3 +185,17 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
+var numA = prompt("enter a first operator");
+var numB = prompt("enter a second operator");
+var operator = prompt("enter a third number");
+if (operator === "+") {
+    alert("numA + numB")
+} else if (operator === "-") {
+    alert("numA-numB")
+} else if (operator === "*") {
+    alert("numA*numB")
+} else if (operator === "/") {
+    alert("numA/numB")
+} else {
+    alert("not there");
+}
