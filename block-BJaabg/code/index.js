@@ -15,4 +15,9 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
-// ⛑ Answer of the above will `$334.76`.
+for (i = bank_balance; i >= 0; i = i - PHONE_PRICE) {
+    amount = i
+}
+
+console.log(bank_balance - amount + (bank_balance - amount) * TAX_RATE)
+    // ⛑ Answer of the above will `$334.76`.
